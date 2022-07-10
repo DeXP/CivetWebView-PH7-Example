@@ -1,0 +1,54 @@
+body {
+    background: #111;
+    background: linear-gradient(to right, #000, #222)
+}
+
+h2 {
+    color: #bbb;
+    padding: 20px 0px;
+}
+
+.progress-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #ccc;
+    margin: 0px 0px 26px 0px;
+}
+
+.progress {
+    height: 20px;
+    background: #bbb;
+    border-radius: 0;
+    box-shadow: none;
+    margin-bottom: 30px;
+    overflow: visible
+}
+
+.progress .progress-bar {
+    position: relative;
+    -webkit-animation: animate-positive 2s;
+    animation: animate-positive 2s;
+}
+
+.progress .progress-value {
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    position: absolute;
+    top: -30px;
+    right: -25px
+}
+
+.progress .progress-bar:after {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    background: #222;
+    position: absolute;
+    top: -10px;
+    bottom: -10px;
+    right: -5px;
+    z-index: 1;
+    transform: rotate(35deg)
+}
